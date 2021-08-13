@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+
+body {
+    background-color: #F2F2F7;
+}
+
+/**/
+@media (max-width: 414px) {
+    * {
+        font-size: 17px;
+    }
+
+    .center {
+        padding: 0 16px;
+    }
+
+    .blue {
+        color: #007AFF;
+    }
+
+    .red {
+        color: #FF3B30;
+    }
+
+    .header {
+        padding-top: 10px;
+        margin-bottom: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #F2F2F7;
+    }
+
+    .header_nav {
+        padding: 0 16px 0 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .header_nav_link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #007AFF;
+    }
+
+    .header_nav_img {
+        height: 20px;
+        width: 13px;
+        margin-right: 5px;
+    }
+
+    .header_avatar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .header_avatar_img {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .header_avatar_name {
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+
+    .header_bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_bar_btn {
+        width: 24%;
+        height: 50px;
+        border: none;
+        outline: none;
+        background-color: #fff;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        color: #007AFF;
+    }
+
+    .header_bar_icon {
+        height: 30%;
+        margin-bottom: 3px;
+    }
+
+    .content {
+
+    }
+
+    .content_block {
+        background-color: #fff;
+        padding: 5px 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .content_block_title {
+        margin-bottom: 3px;
+    }
+
+    .content_block_text {
+        font-size: 0.8rem;
+    }
+
+    .tel_number {
+        color: #007AFF;
+    }
+
+    .facetime {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .content_block_icons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .facetime_icon:first-child {
+        margin-right: 15px;
+    }
+
+    .facetime_icon {
+        padding: 5px 8px;
+        background-color: #F2F2F7;
+        border-radius: 50%;
+    }
+
+    .facetime_img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .notes {
+        min-height: 70px;
+    }
+
+    .notes_title {
+        font-size: 0.7rem;
+    }
+
+    .block {
+        display: flex;
+        flex-direction: column;
+        padding: 8px 15px;
+        justify-content: center;
+    }
+
+    .block_link, .interactive_link {
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: #007AFF;
+    }
+
+    .interactive_link {
+        padding: 5px 0 6px 0;
+        border-bottom: 1px solid #C6C6C8;
+    }
+
+    .interactive_link:last-child {
+        border: none;
+        padding: 5px 0 0 0;
+    }
+
+    .blacklist {
+        color: #FF3B30;
+    }
+
+    .center_edit {
+        padding-left: 16px;
+    }
+
+    .header_edit_center {
+        padding: 0 16px;
+    }
+
+    .header_avatar_editimg {
+        height: 120px;
+        width: 120px;
+    }
+
+    .header_avatar_make {
+        color: #007AFF;
+        font-size: 0.6rem;
+    }
+
+    .edit_block, .edit_delete, .edit_notes, .edit_plus, .edit_field, .edit_sound {
+        background-color: #fff;
+        border-top: 1px solid #C6C6C8;
+        border-bottom: 1px solid #C6C6C8;
+        margin-bottom: 30px;
+    }
+
+    .edit_block, .edit_block_btn, .edit_block_el, .edit_block_plus, .edit_block_phonetype, .edit_plus, .edit_sound {
+        display: flex;
+    }
+
+    .edit_plus {
+        padding: 10px 0 10px 16px;
+    }
+
+    .edit_block {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .edit_input {
+        border: none;
+        outline: none;
+        font-size: 0.8rem;
+        border-bottom: 1px solid #C6C6C8;
+        padding: 8px 0;
+    }
+
+    .edit_input:last-child {
+        border: none;
+    }
+
+    .edit_block_el {
+        justify-content: space-between;
+        align-items: stretch;
+        border-bottom: 1px solid #C6C6C8;
+    }
+
+    .edit_block_plus {
+        padding: 10px 0;
+        align-items: stretch;
+    }
+
+    .edit_block_btn {
+        margin-left: 15px;
+        font-size: 0.7rem;
+        align-items: center;
+    }
+
+    .edit_block_el:last-child {
+        border: none;
+    }
+
+    .edit_block_el .edit_input {
+        width: 70%;
+        color: #007AFF;
+    }
+
+    .edit_block_icon {
+        height: 15px;
+        width: 15px;
+        align-self: center;
+    }
+
+    .edit_block_phonetype {
+        width: 15%;
+        font-size: 0.7rem;
+        padding-right: 5px;
+        color: #007AFF;
+        align-items: center;
+        border-right: 1px solid #C6C6C8;
+    }
+
+    .edit_block_icon_mini {
+        margin-left: 5px;
+        height: 10px;
+        width: 10px;
+    }
+
+    .edit_sound {
+        padding: 10px 16px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .edit_sound_text {
+        display: flex;
+        align-items: center;
+    }
+
+    .edit_sound_title {
+        font-size: 0.7rem;
+        margin-right: 15px;
+    }
+
+    .edit_sound_type, .edit_btn {
+        font-size: 0.85rem;
+    }
+
+    .edit_field, .edit_delete {
+        padding: 7px 0 7px 16px;
+    }
+
+    .edit_notes {
+        padding-top: 10px;
+        min-height: 70px;
+    }
+
+    .insection_title {
+        color: #575757;
+        padding-left: 16px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 0.65rem;
+        font-weight: 400;
+    }
+}
