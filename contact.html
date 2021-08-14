@@ -16,8 +16,8 @@
 		</nav>
 
 		<section class="header_avatar">
-			<img src="img/1.gif" alt="" class="header_avatar_img">
-			<h2 class="header_avatar_name">Андрей Кондаков</h2>
+			<img src="img/1.gif" alt="" class="header_avatar_img" id="avatar">
+			<h2 class="header_avatar_name" id="avatarText">Андрей Кондаков</h2>
 		</section>
 
 		<section class="header_bar center">
@@ -42,7 +42,32 @@
 	<main class="content center">
 		<section class="tel content_block">
 			<p class="content_block_text content_block_title">iPhone</p>
-			<p class="content_block_text tel_number">+7 (999) 999-99-99</p>
+			<p class="content_block_text blue">+7 (999) 999-99-99</p>
+		</section>
+
+		<section class="address content_block">
+			<div class="address_left">
+				<p class="content_block_text content_block_title">рабочий</p>
+				<ul class="address_list">
+					<li class="address_el">Уличная</li>
+					<li class="address_el">Москва</li>
+					<li class="address_el">Россия</li>
+					<li class="address_el">108282</li>
+				</ul>
+			</div>
+			<div class="address_right">
+				<img src="img/map.PNG" alt="" class="address_map">
+			</div>
+		</section>
+
+		<section class="content_block">
+			<p class="content_block_text content_block_title">день рождения</p>
+			<p class="content_block_text blue">14 августа</p>
+		</section>
+
+		<section class="content_block">
+			<p class="content_block_text content_block_title">юбилей</p>
+			<p class="content_block_text blue">14 августа</p>
 		</section>
 
 		<section class="facetime content_block">
@@ -77,5 +102,34 @@
 	</main>
 
 	<script src="js/main.js"></script>
+	<script>
+        let avatarEl = document.querySelector('#avatar');
+        let avatarText = document.querySelector('#avatarText');
+
+        let pageHeight = document.body.scrollHeight + 276,
+            windowHeight = window.innerHeight,
+            maxScroll = pageHeight - windowHeight,
+            minScroll = 0,
+            minHeight = 40,
+            maxHeight = 88,
+            minMargin = 0,
+            maxMargin = -40,
+            minFontSize = 0.6,
+            maxFontSize = 1.3,
+            dScroll = maxScroll - minScroll,
+            dHeight = maxHeight - minHeight;
+        window.addEventListener('scroll', () => {
+            let currentScroll = window.pageYOffset;
+
+            let currentSize = maxHeight - (dHeight * currentScroll) / dScroll;
+            avatarEl.style.height = avatarEl.style.width = currentSize + 'px';
+
+            let currentMargin = ((maxMargin - minMargin) * currentScroll) / dScroll + minMargin;
+            avatarEl.style.marginTop = currentMargin + 'px';
+
+            let currentOpacity = maxFontSize - ((maxFontSize - minFontSize) * currentScroll) / dScroll;
+            avatarText.style.fontSize = currentOpacity + 'rem';
+        })
+	</script>
 </body>
 </html>

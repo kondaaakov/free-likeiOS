@@ -1,4 +1,4 @@
-document.addEventListener('touchstart', (event) => {
+document.addEventListener('click', (event) => {
     let elem = 0;
 
     if (event.target.className === 'btn_icon_delete') {

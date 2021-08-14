@@ -4,141 +4,231 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Контакт</title>
+	<title>Редактирование контакта</title>
 
 	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-<header class="header">
-	<nav class="header_nav header_edit_center">
-		<a href="contact.html" class="header_nav_link">Отменить</a>
-		<a href="contact.html" class="header_nav_link">Готово</a>
-	</nav>
+	<header class="header">
+		<nav class="header_nav header_edit_center">
+			<a href="contact.html" class="header_nav_link">Отменить</a>
+			<a href="contact.html" class="header_nav_link">Готово</a>
+		</nav>
 
-	<section class="header_avatar header_avatar_edit" id="avatarSection">
-		<img src="img/1.gif" alt="" class="header_avatar_img header_avatar_editimg" id="avatar">
-		<a class="header_avatar_make" id="avatarText">Добавить фото</a>
-	</section>
-</header>
-<main class="content">
-	<section class="edit_block center_edit">
-		<input type="text" class="edit_input" placeholder="Имя" value="Андрей">
-		<input type="text" class="edit_input" placeholder="Фамилия">
-		<input type="text" class="edit_input" placeholder="Компания">
-	</section>
+		<section class="header_avatar header_avatar_edit" id="avatarSection">
+			<img src="img/1.gif" alt="" class="header_avatar_img header_avatar_editimg" id="avatar">
+			<a class="header_avatar_make" id="avatarText">Добавить фото</a>
+		</section>
+	</header>
+	<main class="content">
+		<section class="edit_block first_block center_edit">
+			<input type="text" class="edit_input" placeholder="Имя" value="Андрей">
+			<input type="text" class="edit_input" placeholder="Фамилия">
+			<input type="text" class="edit_input" placeholder="Компания">
+		</section>
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_el">
-			<img src="img/minus.svg" alt="" class="btn_icon_delete">
-			<p class="edit_block_phonetype">iPhone <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></p>
-			<input type="text" class="edit_input" value="+7 (999) 999-99-99">
-			<button class="btn_delete hidden">Удалить</button>
-		</div>
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить телефон</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">iPhone <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input blue" value="+7 (999) 999-99-99">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить телефон</p>
+			</div>
+		</section>
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить e-mail</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">домашний <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input" placeholder="E-mail">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить e-mail</p>
+			</div>
+		</section>
 
-	<section class="edit_sound center_edit">
-		<div class="edit_sound_text">
-			<p class="edit_sound_title">Рингтон</p>
-			<p class="edit_sound_type">По умолчанию</p>
-		</div>
-		<img src="img/chevron.svg" alt="" class="edit_block_icon_mini">
-	</section>
+		<a href="add_ringtone.html" class="edit_sound center_edit">
+			<div class="edit_sound_text">
+				<p class="edit_sound_title">Рингтон</p>
+				<p class="edit_sound_type">По умолчанию</p>
+			</div>
+			<img src="img/chevron.svg" alt="" class="edit_block_icon_mini">
+		</a>
 
-	<section class="edit_sound center_edit">
-		<div class="edit_sound_text">
-			<p class="edit_sound_title">Звук сообщ.</p>
-			<p class="edit_sound_type">По умолчанию</p>
-		</div>
-		<img src="img/chevron.svg" alt="" class="edit_block_icon_mini">
-	</section>
+		<a href="add_sound.html" class="edit_sound center_edit">
+			<div class="edit_sound_text">
+				<p class="edit_sound_title">Звук сообщ.</p>
+				<p class="edit_sound_type">По умолчанию</p>
+			</div>
+			<img src="img/chevron.svg" alt="" class="edit_block_icon_mini">
+		</a>
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить url</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">веб-сайт <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input" placeholder="URL-адрес">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить url</p>
+			</div>
+		</section>
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить адрес</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">рабочий <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<div class="group_input">
+					<input type="text" class="edit_input" placeholder="Улица" value="Уличная">
+					<input type="text" class="edit_input" placeholder="Улица">
+					<input type="text" class="edit_input" placeholder="Город" value="Москва">
+					<input type="text" class="edit_input" placeholder="Субъект РФ">
+					<input type="text" class="edit_input" name="country" placeholder="Страна" value="Россия">
+					<input type="number" class="edit_input" placeholder="Индекс" value="108282">
+				</div>
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить день рождения</p>
-		</div>
-	</section>
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить адрес</p>
+			</div>
+		</section>
 
-
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить дату</p>
-		</div>
-	</section>
-
-
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить имя близкого</p>
-		</div>
-	</section>
-
-
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить профиль соцсети</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">дата рождения <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="date" class="edit_input">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить день рождения</p>
+			</div>
+		</section>
 
 
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">добавить службу мгновенных сообщений</p>
-		</div>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">юбилей <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="date" class="edit_input">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить дату</p>
+			</div>
+		</section>
 
-	<section class="edit_notes center_edit">
-		<p class="content_block_text notes_title">Заметки</p>
-	</section>
 
-	<section class="edit_field center_edit">
-		<p class="edit_btn blue">Добавить поле</p>
-	</section>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">мать <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input" placeholder="Имя близкого">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить имя близкого</p>
+			</div>
+		</section>
 
-	<h3 class="insection_title">Связанные контакты</h3>
-	<section class="edit_block center_edit">
-		<div class="edit_block_plus">
-			<img src="img/plus.svg" alt="" class="edit_block_icon">
-			<p class="edit_block_btn">связать контакты...</p>
-		</div>
-	</section>
 
-	<section class="edit_delete center_edit">
-		<p class="edit_btn red">Удалить контакт</p>
-	</section>
-</main>
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">Twitter <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input" placeholder="Профиль в соцсети">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить профиль соцсети</p>
+			</div>
+		</section>
 
-<script src="js/scroll.js"></script>
-<script src="js/delete.js"></script>
-<script src="js/main.js"></script>
+
+		<section class="edit_block center_edit">
+			<div class="edit_block_el">
+				<img src="img/minus.svg" alt="" class="btn_icon_delete">
+				<a href="type.html" class="edit_block_type">Skye <img src="img/chevron.svg" alt="" class="edit_block_icon_mini"></a>
+				<input type="text" class="edit_input" placeholder="IM">
+				<button class="btn_delete hidden">Удалить</button>
+			</div>
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">добавить службу мгновенных сообщений</p>
+			</div>
+		</section>
+
+		<section class="edit_notes center_edit">
+			<p class="content_block_text notes_title">Заметки</p>
+		</section>
+
+		<section class="edit_field center_edit">
+			<a href="add_field.html" class="edit_btn blue">Добавить поле</a>
+		</section>
+
+		<h3 class="insection_title">Связанные контакты</h3>
+		<section class="edit_block center_edit">
+			<div class="edit_block_plus">
+				<img src="img/plus.svg" alt="" class="edit_block_icon">
+				<p class="edit_block_btn">связать контакты...</p>
+			</div>
+		</section>
+
+		<section class="edit_delete center_edit">
+			<p class="edit_btn red">Удалить контакт</p>
+		</section>
+	</main>
+
+	<script src="js/delete.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+	    let avatarEl = document.querySelector('#avatar');
+	    let avatarText = document.querySelector('#avatarText');
+
+	    let pageHeight = document.body.scrollHeight + 219,
+	        windowHeight = window.innerHeight,
+	        maxScroll = pageHeight - windowHeight,
+	        minScroll = 0,
+	        minHeight = 40,
+	        maxHeight = 120,
+	        minMargin = 0,
+	        maxMargin = -40,
+	        minOpacity = 0,
+	        maxOpacity = 1,
+	        dScroll = maxScroll - minScroll,
+	        dHeight = maxHeight - minHeight;
+	    window.addEventListener('scroll', () => {
+	        let currentScroll = window.pageYOffset;
+
+	        let currentSize = maxHeight - (dHeight * currentScroll) / dScroll;
+	        avatarEl.style.height = avatarEl.style.width = currentSize + 'px';
+
+	        let currentMargin = ((maxMargin - minMargin) * currentScroll) / dScroll + minMargin;
+	        avatarEl.style.marginTop = currentMargin + 'px';
+
+	        let currentOpacity = maxOpacity - ((maxOpacity - minOpacity) * currentScroll) / dScroll;
+	        avatarText.style.opacity = currentOpacity;
+	        if (currentOpacity < 0.2) {
+	            avatarText.classList.add('hidden');
+	        } else {
+	            avatarText.classList.remove('hidden');
+	        }
+	    })
+	</script>
 </body>
 </html>

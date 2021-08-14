@@ -70,7 +70,7 @@ body {
 
     .header {
         padding-top: 10px;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
         position: fixed;
         width: 100%;
         top: 0;
@@ -91,6 +91,10 @@ body {
         text-decoration: none;
         color: #007AFF;
         font-size: 0.8rem;
+    }
+
+    .nav_link_bold {
+        font-weight: 600;
     }
 
     .header_nav_img {
@@ -145,13 +149,9 @@ body {
         margin-bottom: 3px;
     }
 
-    .content {
-
-    }
-
     .content_block {
         background-color: #fff;
-        padding: 5px 15px;
+        padding: 8px 15px;
         border-radius: 10px;
         margin-bottom: 10px;
     }
@@ -167,6 +167,28 @@ body {
 
     .tel_number {
         color: #007AFF;
+    }
+
+    .address {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .address_list {
+        list-style-type: none;
+    }
+
+    .address_el {
+        font-size: 0.7rem;
+    }
+
+    .address_right {
+        text-align: right;
+    }
+
+    .address_map {
+        width: 30%;
     }
 
     .facetime {
@@ -265,7 +287,7 @@ body {
         margin-bottom: 30px;
     }
 
-    .edit_block, .edit_block_btn, .edit_block_el, .edit_block_plus, .edit_block_phonetype, .edit_sound {
+    .edit_block, .edit_block_btn, .edit_block_plus, .edit_block_phonetype, .edit_sound {
         display: flex;
     }
 
@@ -283,13 +305,21 @@ body {
         border-radius: 0;
     }
 
-    .edit_input:last-child {
+    .edit_input:nth-last-child(2) {
         border: none;
     }
 
+    .group_input .edit_input:last-child {
+        border: none;
+    }
+
+    .group_input .edit_input:nth-last-child(2) {
+        border-bottom: 1px solid rgb(225 225 225 / 58%);
+    }
+
     .edit_block_el {
-        justify-content: space-between;
-        align-items: stretch;
+        display: grid;
+        grid-template-columns: 15px auto 3fr 70px;;
         border-bottom: 1px solid rgb(225 225 225);
     }
 
@@ -309,8 +339,8 @@ body {
     }
 
     .edit_block_el .edit_input {
-        width: 70%;
-        color: #007AFF;
+        width: 100%;
+        padding-left: 5px;
     }
 
     .edit_block_icon, .btn_icon_delete {
@@ -319,13 +349,16 @@ body {
         align-self: center;
     }
 
-    .edit_block_phonetype {
-        width: 15%;
+    .edit_block_type {
+        min-width: 15%;
         font-size: 0.7rem;
         padding-right: 5px;
         color: #007AFF;
         align-items: center;
         border-right: 1px solid rgb(225 225 225);
+        text-decoration: none;
+        display: flex;
+        margin-left: 15px;
     }
 
     .edit_block_icon_mini {
@@ -338,7 +371,6 @@ body {
         background-color: #FF3B30;
         color: white;
         font-size: 0.7rem;
-        text-align: center;
         border: none;
         outline: none;
         border-radius: 0;
@@ -351,6 +383,8 @@ body {
         padding: 10px 16px;
         justify-content: space-between;
         align-items: center;
+        text-decoration: none;
+        color: black;
     }
 
     .edit_sound_text {
@@ -365,6 +399,10 @@ body {
 
     .edit_sound_type, .edit_btn {
         font-size: 0.85rem;
+    }
+
+    .edit_btn {
+        text-decoration: none;
     }
 
     .edit_field, .edit_delete {
@@ -423,7 +461,7 @@ body {
 
     .types_el {
         font-size: 0.7rem;
-        padding: 7px 16px 7px 0;
+        padding: 9px 16px 9px 0;
         border-bottom: 1px solid rgb(225 225 225);
     }
 
@@ -442,9 +480,229 @@ body {
 
     .content_types .other {
         font-size: 0.7rem;
-        padding: 7px 16px;
+        padding: 9px 16px;
         background-color: #fff;
         border-bottom: 1px solid rgb(225 225 225);
         border-top: 1px solid rgb(225 225 225);
+    }
+
+    .content_types .other_add_field {
+        padding: 0 0 0 16px;
+    }
+
+    .first_block .edit_input {
+        border-bottom: 1px solid rgb(225 225 225 / 58%);
+    }
+
+    .first_block .edit_input:last-child {
+        border-bottom: none;
+    }
+
+    /* ДЛЯ СТРАНИЦЫ ЗВУКОВ */
+
+    .header_sound {
+        margin-bottom: 20px;
+    }
+
+    .sound_block {
+        background-color: #fff;
+        padding: 7px 16px;
+        border-bottom: 1px solid rgb(225 225 225);
+        border-top: 1px solid rgb(225 225 225);
+    }
+
+    .sound_input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sound_text {
+        font-size: 0.7rem;
+    }
+
+    .sound_description {
+        font-size: 0.6rem;
+        padding: 5px 16px;
+        color: #575757;
+    }
+
+    .vibration {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .vibration .sound_text {
+        display: flex;
+        align-items: center;
+    }
+
+    .gray {
+        color: #c4c4c6;
+    }
+
+    .sound_text_img {
+        height: 14px;
+        width: 9px;
+        margin-left: 5px;
+    }
+
+    .sound_block_title {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 0.5rem;
+        color: #575757;
+        font-weight: 500;
+        padding-left: 14px;
+    }
+
+    .shop {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sound_link {
+        font-size: 0.7rem;
+        text-decoration: none;
+        padding: 9px 0 9px 0;
+        border-bottom: 1px solid rgb(225 225 225);
+    }
+
+    .sound_link:last-child {
+        border-bottom: none;
+    }
+
+    .shop {
+        padding: 0 0 0 16px;
+    }
+
+    .list, .default {
+        padding: 0;
+    }
+
+    .sound_list {
+        list-style-type: none;
+    }
+
+    .sound_el {
+        font-size: 0.7rem;
+        padding: 9px 16px 9px 49px;
+        border-bottom: 1px solid rgb(225 225 225);
+    }
+
+    .sound_el:last-child {
+        border-bottom: none;
+    }
+
+    .sound_block:last-child {
+        margin-bottom: 40px;
+    }
+
+    .sound_el .sound_el_link {
+        font-size: 0.7rem;
+        color: black;
+        width: 100%;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sound_el_selected::before {
+        position: absolute;
+        content: '\2713';
+        font-weight: 700;
+        left: 16px;
+        color: #007AFF;
+        font-size: 0.8rem;
+    }
+
+    .sound_el_no {
+        border-bottom: 2px solid rgb(225 225 225);
+    }
+
+    .toggle {
+        width: 38px;
+        height: 24px;
+        border-radius: 100px;
+        background-color: #ddd;
+        overflow: hidden;
+        box-shadow: inset 0 0 2px 1px rgba(0,0,0,.05);
+        position: relative;
+    }
+
+    .b {
+        display: block;
+    }
+
+    .sound_checkbox {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 6;
+    }
+
+    .sound_checkbox:checked ~ .track {
+        box-shadow: inset 0 0 0 20px #4bd863;
+    }
+
+    .sound_checkbox:checked ~ .switch {
+        right: 2px;
+        left: 16px;
+        transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        transition-property: left, right;
+        transition-delay: .05s, 0s;
+    }
+
+    .switch {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        bottom: 2px;
+        right: 16px;
+        background-color: #fff;
+        border-radius: 36px;
+        z-index: 1;
+        transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        transition-property: left, right;
+        transition-delay: 0s, .05s;
+        box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    }
+
+    .track {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        transition: .35s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        box-shadow: inset 0 0 0 2px rgba(0,0,0,.05);
+        border-radius: 40px;
+    }
+}
+
+@media (max-width: 321px) {
+    * {
+        font-size: 18px;
+    }
+
+    .header_nav_img {
+        height: 17px;
+        width: 13px;
+        margin-right: 5px;
+    }
+
+    .edit_block_el {
+        display: grid;
+        grid-template-columns: 15px auto 5fr 1fr;
+        border-bottom: 1px solid rgb(225 225 225);
     }
 }
