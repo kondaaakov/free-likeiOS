@@ -62,6 +62,10 @@
 	</div>
 </div>
 <script>
+    //Получение холста и его контекста
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
     InitApp(); //Инициализировать приложение
 
     window.addEventListener("resize", InitApp); //При растягивании окна приложение будет инициализироваться заново
@@ -71,10 +75,6 @@
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
     }
-
-    //Получение холста и его контекста
-    const canvas = document.getElementById("canvas");
-    const ctx = canvas.getContext("2d");
 
     //Чувствительность — количество пикселей, после которого жест будет считаться свайпом
     const sensitivity = 20;
