@@ -1,5 +1,5 @@
 let headerEl = document.querySelector('.header');
-let mainEl = document.querySelector('.content');
+let contentEl = document.querySelector('.content');
 
 let marginTop = headerEl.clientHeight + 10;
-mainEl.style.marginTop = marginTop + 'px';
+contentEl.style.marginTop = marginTop + 'px';

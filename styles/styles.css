@@ -11,7 +11,7 @@ body {
 /**/
 @media (max-width: 414px) {
     * {
-        font-size: 17px;
+        font-size: 21px;
     }
 
     .center {
@@ -48,6 +48,7 @@ body {
         align-items: center;
         text-decoration: none;
         color: #007AFF;
+        font-size: 0.8rem;
     }
 
     .header_nav_img {
@@ -143,14 +144,14 @@ body {
     }
 
     .facetime_icon {
-        padding: 5px 8px;
+        padding: 4px 9px;
         background-color: #F2F2F7;
         border-radius: 50%;
     }
 
     .facetime_img {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
     }
 
     .notes {
@@ -232,6 +233,7 @@ body {
         font-size: 0.8rem;
         border-bottom: 1px solid #C6C6C8;
         padding: 8px 0;
+        border-radius: 0;
     }
 
     .edit_input:last-child {
