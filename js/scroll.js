@@ -15,7 +15,7 @@ let pageHeight = document.body.scrollHeight + 219,
     dHeight = maxHeight - minHeight;
 window.addEventListener('scroll', () => {
     let currentScroll = window.pageYOffset;
-    console.log(currentScroll);
+
     let currentSize = maxHeight - (dHeight * currentScroll) / dScroll;
     avatarEl.style.height = avatarEl.style.width = currentSize + 'px';
 
@@ -24,5 +24,10 @@ window.addEventListener('scroll', () => {
 
     let currentOpacity = maxOpacity - ((maxOpacity - minOpacity) * currentScroll) / dScroll;
     avatarText.style.opacity = currentOpacity;
+    if (currentOpacity < 0.2) {
+        avatarText.classList.add('hidden');
+    } else {
+        avatarText.classList.remove('hidden');
+    }
 })
 
