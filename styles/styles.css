@@ -119,7 +119,7 @@ body {
     }
 
     .header_avatar_name {
-        font-weight: 600;
+        font-weight: 400;
         font-size: 1.3rem;
     }
 
@@ -157,17 +157,13 @@ body {
     }
 
     .content_block_text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .content_block_title {
         margin-bottom: 3px;
         font-size: 0.6rem;
      }
-
-    .tel_number {
-        color: #007AFF;
-    }
 
     .address {
         display: flex;
@@ -180,7 +176,7 @@ body {
     }
 
     .address_el {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .address_right {
@@ -235,7 +231,7 @@ body {
     }
 
     .block_link, .interactive_link {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-decoration: none;
         color: #007AFF;
     }
@@ -344,8 +340,8 @@ body {
     }
 
     .edit_block_icon, .btn_icon_delete {
-        height: 15px;
-        width: 15px;
+        height: 16px;
+        width: 16px;
         align-self: center;
     }
 
@@ -370,7 +366,7 @@ body {
     .btn_delete {
         background-color: #FF3B30;
         color: white;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         border: none;
         outline: none;
         border-radius: 0;
@@ -398,7 +394,7 @@ body {
     }
 
     .edit_sound_type, .edit_btn {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
     }
 
     .edit_btn {
@@ -415,7 +411,7 @@ body {
     }
 
     .insection_title {
-        color: #575757;
+        color: #8f8f8f;
         padding-left: 16px;
         margin-bottom: 5px;
         text-transform: uppercase;
@@ -518,7 +514,7 @@ body {
     }
 
     .sound_text {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .sound_description {
@@ -539,7 +535,7 @@ body {
     }
 
     .gray {
-        color: #c4c4c6;
+        color: #a6a6a6;
     }
 
     .sound_text_img {
@@ -565,7 +561,7 @@ body {
     }
 
     .sound_link {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         text-decoration: none;
         padding: 9px 0 9px 0;
         border-bottom: 1px solid rgb(225 225 225);
@@ -575,12 +571,8 @@ body {
         border-bottom: none;
     }
 
-    .shop {
+    .shop, .list, .default {
         padding: 0 0 0 16px;
-    }
-
-    .list, .default {
-        padding: 0;
     }
 
     .sound_list {
@@ -588,8 +580,8 @@ body {
     }
 
     .sound_el {
-        font-size: 0.7rem;
-        padding: 9px 16px 9px 49px;
+        font-size: 0.8rem;
+        padding: 9px 16px 9px 30px;
         border-bottom: 1px solid rgb(225 225 225);
     }
 
@@ -602,7 +594,7 @@ body {
     }
 
     .sound_el .sound_el_link {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: black;
         width: 100%;
         text-decoration: none;
